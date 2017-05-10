@@ -12,10 +12,14 @@
 <body>
 <div id="example"></div>
 <script type="text/babel">
-    ReactDOM.render(
-            <h1>Hello, world!</h1>,
-        document.getElementById('example')
-    );
+var Hello = React.createClass({
+    getInitialState: function () {
+        return {
+            opacity: 1.0
+        }
+    },
+
+})
 </script>
 </body>
 </html>
