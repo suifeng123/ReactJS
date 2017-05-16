@@ -1,6 +1,7 @@
 import React, { Component, PropTypes, cloneElement } from 'react';
 import ReactDOM from 'react-dom';
 import Fei from './Fei';
+import List from './myList';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +33,7 @@ class App extends Component {
           </select>
         </div>
 
-        <Fei />
+        <List />
       </div>
     );
   }
