@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div">
+    <ul>
+        <li>asdf</li>
+        <li>sfd</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    window.onload= function () {
+       var oDiv = document.getElementById('div');
+       console.log(oDiv);
+       for(key in oDiv){
+           console.log("key:"+oDiv[key]);
+       }
+    }
+
+</script>
+</body>
+</html>

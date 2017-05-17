@@ -2,6 +2,8 @@
  * Created by Administrator on 2017/5/16.
  */
 import { Map } from 'immutable';
+import React, { Component } from 'react';
+import '_' from  'loadsh';
 
 let a = Map({
     select: 'users',
