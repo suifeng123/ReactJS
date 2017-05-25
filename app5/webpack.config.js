@@ -1,7 +1,6 @@
 var path = require('path');
 module.exports = {
   entry: './src/app.js',
-  devtool: 'sourcemap',
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'app.bundle.js',

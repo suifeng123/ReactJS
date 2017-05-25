@@ -2,14 +2,9 @@
   "name": "redux-blog",
   "version": "1.0.0",
   "description": "a simple blog based on react and redux",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arcthur/react-book-examples"
-  },
   "scripts": {
     "build": "./node_modules/.bin/webpack",
-    "start": "./node_modules/.bin/webpack-dev-server --hot --inline --content-base .",
-    "test": "mocha --compilers js:babel-register"
+    "start": "./node_modules/.bin/webpack-dev-server --hot --inline --content-base ."
   },
   "dependencies": {
     "react": "^15.0.2",
@@ -35,6 +30,6 @@
     "redux-devtools-dock-monitor": "^1.1.0",
     "redux-devtools-log-monitor": "^1.0.4",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.16.5"
   }
 }
