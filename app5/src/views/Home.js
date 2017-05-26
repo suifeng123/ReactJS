@@ -1,21 +1,31 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React,{ Component }from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'redux';
 import PreviewList from '../components/Home/PreviewList';
-import { actions } from './HomeRedux';
-import { push } from 'react-router-redux';
+import { listActions } from './HomeRedux';
 
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
-    const { loadArticles, articleList, push } = this.props;
 
     return (
       <div>
-        <h1>Home</h1>
-        <PreviewList {...this.props} />
+        <h1>首页的展示页面</h1>
+        <PreviewList
+            {...this.props.list}
+            {...list.props.listActions}
+        />
       </div>
     );
   }
 }
 
-export default Home;
+export default connect(state => {
+  return {
+    list: state.home.list
+  };
+}, dispatch => {
+  return {
+    listActions: bindActionCreators(listActions,dispatch),
+  };
+})(Home);

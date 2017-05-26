@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{ Component } from 'react';
 
-class Detail extends React.Component {
+class Detail extends Component {
   render() {
     return (
-      <h1>Detail</h1>
+      <h1>这个是详细页面的展示信息</h1>
     );
   }
 }

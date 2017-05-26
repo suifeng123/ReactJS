@@ -7,9 +7,10 @@ import Frame from '../layouts/Frame';
 
 const routes = (
     <Router history={hashHistory}>
-        <Route path="/" component={Frame} />
+        <Route path="/" component={Frame}>
         <IndexRoute components={Home}/>
         <Route path="/detail/:id" component={Detail} />
+        </Route>
     </Router>
 );
 
